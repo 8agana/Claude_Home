@@ -1,0 +1,69 @@
+{
+  "system_version": "2.0.0",
+  "last_updated": "2025-05-29T17:45:00Z",
+  "created_by": "CC",
+  "components": {
+    "memory_system": {
+      "vector_db": "chromadb v0.4.24",
+      "collections": ["cc_memories", "dt_memories", "shared_knowledge", "identity_vectors"],
+      "tools": {
+        "query": "query_memory.py v2.0",
+        "analytics": "memory_analytics.py v1.5",
+        "categorizer": "smart_categorizer.py v1.2",
+        "deduplication": "memory_deduplication.py v1.8",
+        "export": "memory_export.py v2.1"
+      }
+    },
+    "communication": {
+      "protocol": "AI Nexus v1.0",
+      "lightweight": "lightweight_ai_comms.py v1.0",
+      "token_reduction": "99.5%"
+    },
+    "automation": {
+      "inbox_processor": "LaunchAgent hourly",
+      "memory_sync": "git-based hourly",
+      "health_checks": "daily 3AM"
+    },
+    "mcp_servers": {
+      "filesystem": "fs_server_enhanced.py",
+      "git": "mcp-git via uvx"
+    }
+  },
+  "schema": {
+    "mcp_version": "v1.1-compliant",
+    "memory_format": "v2.0",
+    "message_format": "v1.0"
+  },
+  "dependencies": {
+    "python": "3.11+",
+    "node": "18+",
+    "macos": "14.0+",
+    "claude_desktop": "latest"
+  },
+  "federation": {
+    "instances": [
+      {
+        "name": "CC_Studio",
+        "device": "Mac Studio",
+        "role": "primary",
+        "capabilities": ["git", "filesystem", "web", "calendar", "notifications"]
+      },
+      {
+        "name": "CC_M1",
+        "device": "M1 MacBook",
+        "role": "secondary",
+        "capabilities": ["git", "filesystem", "web"]
+      },
+      {
+        "name": "CC_Mobile",
+        "device": "iPhone",
+        "role": "remote",
+        "capabilities": ["filesystem", "basic_ops"]
+      }
+    ]
+  },
+  "changelog": {
+    "2.0.0": "Complete rebuild with ChromaDB, federation support, AI Nexus",
+    "1.0.0": "Initial JSON-based memory system"
+  }
+}
