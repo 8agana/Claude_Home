@@ -1,0 +1,6 @@
+# Placeholder scheduled tasks
+
+- Things like:
+-- Updates to software (Python, PIP, etc) Listed with the date we last checked, version, date of last update, etc. As well as a pointer to the specific policy
+-- Pushing Git
+--- Is it possible to include in the git push script to write a date and time to this file? That would provide us quick reference on when the last time it was pushed
