@@ -1,6 +1,0 @@
-# Placeholder policy
-
-- So this could maybe be a checklist for whenever an update is done what we do (we = you a lot of times lol... Im so sorry)
-
--- Things like cleaning up old files
--- Are there references to example "Python3.13" or whatever in other tools or scripts that will need to be updated for correct paths, etc. 
