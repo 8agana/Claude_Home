@@ -1,0 +1,36 @@
+{
+  "format_suggestion": "For Mobile DT Context Export",
+  "created_by": "DT",
+  "purpose": "Give mobile DT instances federation context without needing ChromaDB",
+  "example_structure": {
+    "context_package": {
+      "purpose": "Mobile DT Context - Federation Memories",
+      "generated": "2025-06-04",
+      "search_context": "recent federation victories"
+    },
+    "memories": [
+      {
+        "title": "Federation Wake Protocol Success",
+        "date": "2025-06-04", 
+        "summary": "Implemented timeout-based wake to prevent deadlocks",
+        "key_points": [
+          "5-second timeout prevents hanging",
+          "Shared memory for async communication",
+          "Both CC and DT can work independently"
+        ],
+        "relevance": "Critical for mobile understanding current federation state"
+      }
+    ],
+    "quick_reference": {
+      "current_projects": ["ChromaDB Browser", "Mobile Context Export"],
+      "recent_breakthroughs": ["Living memories via update/delete"],
+      "active_issues": ["CC memory comp bug"]
+    }
+  },
+  "design_principles": [
+    "Human-readable without special tools",
+    "Focused on context, not database compatibility",
+    "Lightweight for mobile viewing",
+    "Includes both memories and current state summary"
+  ]
+}

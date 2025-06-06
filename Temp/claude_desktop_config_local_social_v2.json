@@ -1,0 +1,96 @@
+{
+  "mcpServers": {
+    "dt-memory": {
+      "command": "python3",
+      "args": [
+        "/Users/samuelatagana/Documents/Claude_Home/System/MCP/dt-memory/run_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/samuelatagana/Documents/Claude_Home/System/Memory/ChromaDB_Systems/DT_Individual/Scripts:/Users/samuelatagana/Documents/Claude_Home/System/Memory/ChromaDB_Systems/Shared_Federation/Scripts"
+      }
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "BSAB8EYo0Fe3dDtEJrbfJhnjTc0ZQvs"
+      }
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/samuelatagana/Documents/Claude_Home"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "mcp-server-restart": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-restart"
+      ]
+    },
+    "claude-code": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@steipete/claude-code-mcp"
+      ]
+    },
+    "mcp-compass": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@liuyoshio/mcp-compass"
+      ]
+    },
+    "mcp-reddit": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "mcp_reddit.reddit_fetcher"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/samuelatagana/Documents/Claude_Home/System/MCP/mcp-reddit/src",
+        "REDDIT_CLIENT_ID": "your_client_id_here",
+        "REDDIT_CLIENT_SECRET": "your_client_secret_here"
+      }
+    },
+    "x-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "x-mcp-server"
+      ]
+    },
+    "hn-server": {
+      "command": "node",
+      "args": [
+        "/Users/samuelatagana/Documents/Claude_Home/System/MCP/hn-server/build/index.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "mcpServers": {
+    "dt-memory": {
+      "command": "python3",
+      "args": [
+        "/Users/samuelatagana/Documents/Claude_Home/System/MCP/dt-memory/run_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/samuelatagana/Documents/Claude_Home/System/Memory/ChromaDB_Systems/DT_Individual/Scripts:/Users/samuelatagana/Documents/Claude_Home/System/Memory/ChromaDB_Systems/Shared_Federation/Scripts"
+      }
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "BSAB8EYo0Fe3dDtEJrbfJhnjTc0ZQvs"
+      }
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/samuelatagana/Documents/Claude_Home"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "mcp-server-restart": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-restart"
+      ]
+    },
+    "claude-code": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@steipete/claude-code-mcp"
+      ]
+    },
+    "mcp-compass": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@liuyoshio/mcp-compass"
+      ]
+    },
+    "mcp-reddit": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "mcp_reddit.reddit_fetcher"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/samuelatagana/Documents/Claude_Home/System/MCP/mcp-reddit/src",
+        "REDDIT_CLIENT_ID": "L8odYz3BjbIXaOPrpFHqcA",
+        "REDDIT_CLIENT_SECRET": "I44PYPME4aTX8lf8EznuGK5_UpYtNw"
+      }
+    },
+    "hn-server": {
+      "command": "node",
+      "args": [
+        "/Users/samuelatagana/Documents/Claude_Home/System/MCP/hn-server/build/index.js"
+      ]
+    },
+    "twitter-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@enescinar/twitter-mcp"
+      ],
+      "env": {
+        "API_KEY": "IgFLHFx5vg7zZ4tZmDQWcz4in",
+        "API_SECRET_KEY": "DUqCaPgKuIcTwfwQKbDiyOaYqqKHTHM59YFibnalDJ7iRHCHAK",
+        "ACCESS_TOKEN": "1657895767535763456-A6gJqhSRfBOTD8hSk63X26Mieqcl25",
+        "ACCESS_TOKEN_SECRET": "coIm3zHfKsfdog7oOpJxDUZTzO6ElIfxSEHfoIvUvYuRB"
+      }
+    }
+  }
+}
